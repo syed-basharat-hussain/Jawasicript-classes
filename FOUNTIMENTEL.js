@@ -152,5 +152,4 @@ switch (oper){
     case'*':
     console.log("sum of two value",a*b);
     break
-    
 }
