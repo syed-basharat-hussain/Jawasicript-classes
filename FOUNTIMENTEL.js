@@ -110,12 +110,47 @@
     
 // }
 
-let num = 20;
-If (num % 2 === 0) {
-    console.log("Even");
+// let a=20;
+// if (a%2==0){
+//     console.log("even number");
     
-}
-else ("Odd") {
-    console.log("odd");
+// }
+// else {
+//     console.log("odd number");
+    
+// }
+// let page="/login";
+// switch(page){
+//     case '/home':
+//         console.log("home page");;
+//         break;
+//         case '/about':
+//             console.log("about page");
+//             break
+//         case '/contect':
+//             console.log("Contect page");
+//             break
+//         case '/login':
+//             console.log("Login Page");
+//             break
+            
+            
+// }
+// let a=-50;
+// let b=6;
+// let oper="+";
+// switch (oper){
+//     case'+':
+//     console.log("sum of two value",a+b);
+//     break
+    
+// }
+let a=5;
+let b=6;
+let oper="*";
+switch (oper){
+    case'*':
+    console.log("sum of two value",a*b);
+    break
     
 }
