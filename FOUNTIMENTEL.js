@@ -145,11 +145,20 @@
 //     break
     
 // }
-let a=5;
-let b=6;
-let oper="*";
-switch (oper){
-    case'*':
-    console.log("sum of two value",a*b);
-    break
+// let a=5;
+// let b=6;
+// let oper="*";
+// switch (oper){
+//     case'*':
+//     console.log("sum of two value",a*b);
+//     break
+// }
+for (let i=1; i<=5; i++){
+    for (let j=2; j<=4; j++){
+        for (let k=3; k<=4; k++){
+        console.log(i,j,k);
+        
+    }
+        
+    }
 }
