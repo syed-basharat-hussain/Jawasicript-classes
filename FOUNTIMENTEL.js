@@ -153,12 +153,31 @@
 //     console.log("sum of two value",a*b);
 //     break
 // }
-for (let i=1; i<=5; i++){
-    for (let j=2; j<=4; j++){
-        for (let k=3; k<=4; k++){
-        console.log(i,j,k);
+// for (let i=1; i<=5; i++){
+//     for (let j=2; j<=4; j++){
+//         for (let k=3; k<=4; k++){
+//         console.log(i,j,k);
         
-    }
+//     }
         
-    }
-}
+//     }
+// }
+
+// let i=6;
+// while (i>=1){
+//     console.log(i);
+//     i--;
+    
+// }
+
+// for (let i = 5; i >= 0; i--) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row +="*";
+//     }
+//     console.log(row);
+    
+// }
+
+// what is array
+// one D arry and 2D array
