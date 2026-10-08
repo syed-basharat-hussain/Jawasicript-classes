@@ -181,3 +181,92 @@
 
 // what is array
 // one D arry and 2D array
+
+// structure of function
+// function name(){
+//     block code 
+// }
+// name()
+
+
+
+// function hi(){
+//     console.log("hi this is function");
+    
+// }
+// hi()
+// // hi()
+
+// // hi()
+
+// function add(a,b){
+//     let sum=a+b;
+//     console.log(`sum of ${a} and ${b} is ${sum}`);
+// }
+// add(2,3)
+// add(4,5)
+
+// // function base calculation
+// function calculate(num1,num2,operator){
+//     let result;
+//     switch(operator){
+//         case '+':
+//             result=num1+num2;
+//             break;
+//         case '-':
+//             result=num1-num2;
+//             break;
+//         case '*':
+//             result=num1*num2;
+//             break;
+//         case '/':
+//             result=num1/num2;
+//         default:
+//             console.log("invlid sytex");
+//             return null;
+//             console.log(result);
+            
+//     }}
+//     calculate(1,2,'+')
+
+// function
+
+function greed(){
+    console.log("hi this is function");
+}
+greed()
+// greed()
+// greed()
+
+// greeding for teacher function
+
+function greeding(name){
+    console.log(`Sir ${name}! salam how are you?`);
+}
+greeding("Ali")
+greeding("Ahmed")
+greeding("Omar")
+
+// calcualtion function
+function calculate(num1, num2, operator) {
+    let result;
+    switch(operator){
+        case '+':
+            result=num1+num2;
+            break;
+        case '-':
+            result=num1-num2;
+            break;
+        case '*':
+            result=num1*num2;
+            break;
+        case '/':
+            result=num1/num2;
+        default:
+            console.log("invalid syntax");
+            return null;
+    }
+    console.log(`Result: ${result}`);
+}
+calculate(1,2,'+')
+calculate(3,4,'-')
