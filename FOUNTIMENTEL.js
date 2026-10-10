@@ -5,23 +5,23 @@
 // }
 // else if (age < 18){
 //     console.log("Not eligible to vote");
-    
+
 // }
 
 // let a = -2;
 // if (a >= 0){
 //     console.log("a is Positive");
-    
+
 // }
 // else {
 //     console.log("a is Negative");
-    
+
 // }
 
 // for (let a=2; a<=100; ++a){
 
 //     console.log(a);
-    
+
 // }
 // let a = 1
 // for (let a=10; a<=5; ++a){
@@ -31,93 +31,93 @@
 
 // for (let a=100; a>=1; a = a-5) {
 //     console.log(a);
-    
+
 // }
 
 // for (let a=1; a<=100; a = a + 2) {
 //     console.log(a);
-    
+
 // }
 
 // for (let a=2; a<=100; a = a + 2){
 //     console.log(a);
-    
+
 // }
 // for (let a=3; a<=100; a = a + 3){
 //     console.log(a);
-    
+
 // }
 // let a = 1;
 // for (let a=1; a<=100; a++){
 //     console.log(a);
-    
+
 // }
 
 // let a = 9;
 // if (a > 0) {
 //     console.log("positive");
-    
+
 // }
 // else if (a < 0) {
 //     console.log("Negative");
 // }
 // else if (a === 0) {
 //     console.log("Zero");
-    
+
 // }
 
 // let a = 37;
 // if (a >= 80 && a <= 100) {
 //     console.log("A+");
-    
+
 // }
 // if (a >= 70 && a < 80) {
 //     console.log("A");
-    
+
 // }
 // if (a >= 60 && a < 70) {
 //     console.log("B");
-    
+
 // }
 // if (a >= 50 && a < 60) {
 //     console.log("C");
-    
+
 // }
 // if (a >= 40 && a < 50) {
 //     console.log("D");
-    
+
 // }
 // if (a < 40) {
 //     console.log("Fail");
-    
+
 // }
 
 // let age = 61;
 // if (age <= 13) {
 //     console.log("Child ");
-    
+
 // }
 // else if (age > 13 && age <= 19) {
 //     console.log("Teenager");
-    
+
 // }
 // else if (age > 19 && age <= 59) {
 //     console.log("Adult ");
-    
+
 // }
 // else if (age >= 60) {
 //     console.log("Senior Citizen ");
-    
+
 // }
 
 // let a=20;
 // if (a%2==0){
 //     console.log("even number");
-    
+
 // }
 // else {
 //     console.log("odd number");
-    
+
 // }
 // let page="/login";
 // switch(page){
@@ -133,8 +133,8 @@
 //         case '/login':
 //             console.log("Login Page");
 //             break
-            
-            
+
+
 // }
 // let a=-50;
 // let b=6;
@@ -143,7 +143,7 @@
 //     case'+':
 //     console.log("sum of two value",a+b);
 //     break
-    
+
 // }
 // let a=5;
 // let b=6;
@@ -157,9 +157,9 @@
 //     for (let j=2; j<=4; j++){
 //         for (let k=3; k<=4; k++){
 //         console.log(i,j,k);
-        
+
 //     }
-        
+
 //     }
 // }
 
@@ -167,7 +167,7 @@
 // while (i>=1){
 //     console.log(i);
 //     i--;
-    
+
 // }
 
 // for (let i = 5; i >= 0; i--) {
@@ -176,7 +176,7 @@
 //         row +="*";
 //     }
 //     console.log(row);
-    
+
 // }
 
 // what is array
@@ -192,7 +192,7 @@
 
 // function hi(){
 //     console.log("hi this is function");
-    
+
 // }
 // hi()
 // // hi()
@@ -225,48 +225,82 @@
 //             console.log("invlid sytex");
 //             return null;
 //             console.log(result);
-            
+
 //     }}
 //     calculate(1,2,'+')
 
 // function
 
-function greed(){
-    console.log("hi this is function");
-}
-greed()
+// function greed(){
+//     console.log("hi this is function");
+// }
+// greed()
+// greed()
 // greed()
 // greed()
 
 // greeding for teacher function
 
-function greeding(name){
-    console.log(`Sir ${name}! salam how are you?`);
-}
-greeding("Ali")
-greeding("Ahmed")
-greeding("Omar")
+// function greeding(name){
+//     console.log(`Sir ${name}! salam how are you?`);
+// }
+// greeding("Ali")
+// greeding("Ahmed")
+// greeding("Omar")
 
 // calcualtion function
+// function calculate(num1, num2, operator) {
+//     let result;
+//     switch(operator){
+//         case '+':
+//             result=num1+num2;
+//             break;
+//         case '-':
+//             result=num1-num2;
+//             break;
+//         case '*':
+//             result=num1*num2;
+//             break;
+//         case '/':
+//             result=num1/num2;
+//         default:
+//             console.log("invalid syntax");
+//             return null;
+//     }
+//     console.log(`Result: ${result}`);
+// }
+// calculate(1,2,'+')
+// calculate(3,4,'-')
+
+// function greeding(name){
+//     console.log(`Sir ${name}! Slam how are you ?`);
+
+// }
+// greeding("Aslam")
+// function greeding(name){
+//     console.log(`Sir ${name}! salam how are you?`);
+//  }
+//  greeding("Ali")
+
 function calculate(num1, num2, operator) {
     let result;
-    switch(operator){
+    switch (operator) {
         case '+':
-            result=num1+num2;
+            result = num1 + num2;
             break;
         case '-':
-            result=num1-num2;
+            result = num1 - num2;
             break;
         case '*':
-            result=num1*num2;
-            break;
-        case '/':
-            result=num1/num2;
-        default:
-            console.log("invalid syntax");
-            return null;
+            result = num1 * num2;
+            break
+             case '/':
+            result = num1 / num2;
+            break
     }
     console.log(`Result: ${result}`);
 }
-calculate(1,2,'+')
-calculate(3,4,'-')
+calculate(10,2,"/")
+
+const add = (a, b) => console.log(1, 2,"+");
+
