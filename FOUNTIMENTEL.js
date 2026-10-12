@@ -282,25 +282,120 @@
 //  }
 //  greeding("Ali")
 
-function calculate(num1, num2, operator) {
-    let result;
-    switch (operator) {
-        case '+':
-            result = num1 + num2;
-            break;
-        case '-':
-            result = num1 - num2;
-            break;
-        case '*':
-            result = num1 * num2;
-            break
-             case '/':
-            result = num1 / num2;
-            break
-    }
-    console.log(`Result: ${result}`);
-}
-calculate(10,2,"/")
+// function calculate(num1, num2, operator) {
+//     let result;
+//     switch (operator) {
+//         case '+':
+//             result = num1 + num2;
+//             break;
+//         case '-':
+//             result = num1 - num2;
+//             break;
+//         case '*':
+//             result = num1 * num2;
+//             break
+//              case '/':
+//             result = num1 / num2;
+//             break
+//     }
+//     console.log(`Result: ${result}`);
+// }
+// calculate(10,2,"/")
 
-const add = (a, b) => console.log(1, 2,"+");
+// const add = (a, b) => console.log(1, 2,"+");
 
+
+// reduce 
+// map 
+// for each 
+// sord 
+// include
+// inka syntax  
+
+// function add(a, b) {
+//     return a + b;
+// }
+// console.log(add(20, 20));
+
+// function add(a,b){
+//     let sum=a+b;
+//     console.log(`sum of ${a} and ${b} is ${sum}`);
+// }
+// add(2,3)
+
+// function add(a, b) {
+//     let sum = a + b;
+//     console.log(`sum of ${a} and ${b} is ${sum}`);
+// }
+// add(4, 5)
+
+// function evenOdd(num) {
+// if (num % 2 === 0) {
+//     return "Even";
+// }
+// else {
+//     return "Odd";
+// }
+// }
+// console.log(evenOdd(9));
+// console.log(evenOdd(20));
+
+// function largest(a, b, c) {
+//     if (a >= b && a >= c) {
+//         return a;
+//     }
+//     else if (b >= a && b >= c) {
+//         return b;
+//     }
+//     else {
+//         return c;
+//     }
+// }
+// console.log(largest(20, 0, 10));
+
+// function factorial(n) {
+//     if (!Number.isInteger(n) || n < 0) {
+//         return "Invalid input";
+//     }
+//     let result = 2;
+//     for (let i = 5; i <= n; i++) {
+//         result = result * i;
+//     }
+//     return result;
+// }
+// console.log(factorial(5));
+// console.log(factorial(0));
+// // console.log(factorial(13));
+
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
+// }
+// console.log(reverseString("Hello"))
+
+// function arraySum(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(arraySum([10, 82, 9, 16, 100]));
+
+
+
+// function largestArray(arr) {
+//     if (arr.length === 0) {
+//         return "Array is empty";
+//     }
+//     let largest = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > largest) {
+//             largest = arr[i];
+//         }
+//     }
+//     return largest;
+// }
+// console.log(largestArray([12, 45, 7, 89, 23]));
+
+function countVowels(){}
