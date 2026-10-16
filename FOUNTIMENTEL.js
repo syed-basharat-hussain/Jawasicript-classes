@@ -383,6 +383,8 @@
 // console.log(arraySum([10, 82, 9, 16, 100]));
 
 
+// Animedubhindi
+
 
 // function largestArray(arr) {
 //     if (arr.length === 0) {
@@ -398,4 +400,37 @@
 // }
 // console.log(largestArray([12, 45, 7, 89, 23]));
 
-function countVowels(){}
+// function Hello() {
+//     console.log("Hello");
+    
+// }
+// Hello()
+// Hello()
+// Hello()
+// let num = [1, 3, 4, 2 ,4];
+
+// let double = num.map((el) => {
+//     return el * el;
+// }
+// );
+
+// let numbers = [10, 20, 30]; 
+// let newNumbers = [...numbers, 40, 50]; 
+// console.log("Original Array:", numbers); 
+// console.log("New Array:", newNumbers); 
+
+// function studentMarks(name, ...marks) { 
+// console.log("Student Name:", name); 
+// console.log("Student Marks:", marks);
+//  } 
+// studentMarks("Ali", 85, 90, 78, 88, 95);
+
+
+const student = {
+    name: "Syed Basharat Hussain",
+    age: 20,
+    city: "Skardu",
+    course: "Wed dev"
+    academy: "NPA"
+};
+console.log();
