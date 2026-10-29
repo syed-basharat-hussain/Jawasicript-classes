@@ -655,3 +655,26 @@
 // deleteStudent(2); 
 // // 7. Display final records 
 // showResults()
+
+// let promis=new Promise((resolve, reject)=>{
+//     let user=true;
+//     if(user==false){
+//         reject("user cannot register")
+
+//     }
+//     else{
+//         resolve("login sucessfully")
+//     }
+// })
+
+// promis.then(msg=>console.log(msg))
+// .catch(err=>console.error(err))
+
+let checkEven = new Promise((resolve, reject) => {
+    let number = 3;
+    if (number % 2 === 0) resolve("The number is even!");
+    else reject("The number is odd!");
+});
+checkEven
+    .then((message) => console.log(message)) // On success
+    .catch((error) => console.error(error)); // On failure
