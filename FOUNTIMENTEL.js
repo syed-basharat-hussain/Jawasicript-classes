@@ -696,27 +696,27 @@
 // };
 
 // // Using async/await
-// async function getUserData(id) {
-//   try {
-//     console.log('Fetching user...');
-//     const user = await fetchUser(id); // Waits for the promise to resolve
-//     console.log('User data:', user);
+async function getUserData(id) {
+  try {
+    console.log('Fetching user...');
+    const user = await fetchUser(id); // Waits for the promise to resolve
+    console.log('User data:', user);
 
-//     // You can use the result directly
-//     return `${user.name}'s profile`;
-//   } catch (error) {
-//      // Handle errors with try/catch
-//      console.error('Error fetching user:', error.message);
-//      return 'Guest profile';
-//    }
-// }
+    // You can use the result directly
+    return `${user.name}'s profile`;
+  } catch (error) {
+     // Handle errors with try/catch
+     console.error('Error fetching user:', error.message);
+     return 'Guest profile';
+   }
+}
 
-// // Async functions always return promises
-// console.log('Starting...');
-// getUserData(1)
-//   .then(result => console.log('Result:', result))
-//   .catch(error => console.error('Unexpected error:', error));
-// console.log('This runs before getUserData completes');
+// Async functions always return promises
+console.log('Starting...');
+getUserData(1)
+  .then(result => console.log('Result:', result))
+  .catch(error => console.error('Unexpected error:', error));
+console.log('This runs before getUserData completes');
 
 // let checkEven = new Promise((resolve, reject) => {
 //     let number = 1;
@@ -725,3 +725,4 @@
 // });
 //     checkEven.then((message) => console.log(message))
 //     .catch((error) => console.error(error));
+
