@@ -727,3 +727,56 @@
 //   .catch(error => console.error('Unexpected error:', error));
 // console.log('This runs before getUserData completes');
 
+
+function calculateResult(name, marks, totalMarks) {
+    return new Promise((resolve, reject) => {
+
+        // Validate marks
+        if (marks < 0 || marks > totalMarks) {
+            reject("Invalid marks!");
+            return;
+        }
+
+        // Calculate percentage
+        let percentage = (marks / totalMarks) * 100;
+
+        // Calculate grade
+        let grade;
+
+        if (percentage >= 80) {
+            grade = "A+";
+        } else if (percentage >= 70) {
+            grade = "A";
+        } else if (percentage >= 60) {
+            grade = "B";
+        } else if (percentage >= 50) {
+            grade = "C";
+        } else if (percentage >= 40) {
+            grade = "D";
+        } else {
+            grade = "Fail";
+        }
+
+        // Return result
+        resolve({
+            name: name,
+            marks: marks,
+            totalMarks: totalMarks,
+            percentage: percentage.toFixed(2),
+            grade: grade
+        });
+    });
+}
+
+// Call the function
+calculateResult("Ali", 420, 500)
+    .then((result) => {
+        console.log("Student Name:", result.name);
+        console.log("Obtained Marks:", result.marks);
+        console.log("Total Marks:", result.totalMarks);
+        console.log("Percentage:", result.percentage + "%");
+        console.log("Grade:", result.grade);
+    })
+    .catch((error) => {
+        console.log("Error:", error);
+    });
