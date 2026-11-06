@@ -498,8 +498,8 @@
 //         };
 // // Display student result 
 // console.log(student.calculateResult()); 
- 
- 
+
+
 // let students = [ 
 //     { 
 //         id: 1, 
@@ -514,18 +514,18 @@
 //         ] 
 //     } 
 // ]; 
- 
+
 // // Calculate student result 
 // function calculateResult(student) { 
 //     let total = student.subjects.reduce((sum, subject) => { 
 //         return sum + subject.marks; 
 //     }, 0); 
- 
+
 //     let maximumMarks = student.subjects.length * 100; 
 //     let percentage = (total / maximumMarks) * 100; 
- 
+
 //     let grade; 
- 
+
 //     if (percentage >= 80) { 
 //         grade = "A+"; 
 //     } else if (percentage >= 70) { 
@@ -539,11 +539,11 @@
 //     } else { 
 //         grade = "F"; 
 //     } 
- 
+
 //     let status = student.subjects.every(subject => subject.marks >= 40) 
 //         ? "Pass" 
 //         : "Fail"; 
- 
+
 //     return { 
 //         total, 
 //         maximumMarks, 
@@ -552,7 +552,7 @@
 //         status 
 //     }; 
 // } 
- 
+
 // // CREATE: Add a student 
 // function addStudent(name, className, subjects) { 
 //     let newStudent = { 
@@ -563,43 +563,43 @@
 //         className, 
 //         subjects 
 //     }; 
- 
+
 //     students.push(newStudent); 
 //     console.log("Student added successfully!"); 
 // } 
- 
+
 // // READ: Display all student results 
 // function showResults() { 
 //     if (students.length === 0) { 
 //         console.log("No student records found."); 
 //         return; 
 //     } 
- 
+
 //     students.forEach(student => { 
 //         let result = calculateResult(student); 
- 
+
 //         console.log("\n--- STUDENT RESULT ---"); 
 //         console.log("ID:", student.id); 
 //         console.log("Name:", student.name); 
 //         console.log("Class:", student.className); 
- 
+
 //         console.log("\nSubject-wise Marks:"); 
- 
+
 //         student.subjects.forEach(subject => { 
 //             console.log(`${subject.name}: ${subject.marks}/100`); 
 //         }); 
- 
+
 //         console.log("\nTotal:", result.total, "/", result.maximumMarks); 
 //         console.log("Percentage:", result.percentage + "%"); 
 //         console.log("Grade:", result.grade); 
 //         console.log("Status:", result.status); 
 //     }); 
 // } 
- 
+
 // // UPDATE: Change student details or marks 
 // function updateStudent(id, newName, newClass, newSubjects) { 
 //     let student = students.find(s => s.id === id); 
- 
+
 //     if (!student) { 
 //         console.log("Student not found!"); 
 //         return; 
@@ -728,55 +728,169 @@
 // console.log('This runs before getUserData completes');
 
 
-function calculateResult(name, marks, totalMarks) {
+// function calculateResult(name, marks, totalMarks) {
+//     return new Promise((resolve, reject) => {
+
+//         // Validate marks
+//         if (marks < 0 || marks > totalMarks) {
+//             reject("Invalid marks!");
+//             return;
+//         }
+
+//         // Calculate percentage
+//         let percentage = (marks / totalMarks) * 100;
+
+//         // Calculate grade
+//         let grade;
+
+//         if (percentage >= 80) {
+//             grade = "A+";
+//         } else if (percentage >= 70) {
+//             grade = "A";
+//         } else if (percentage >= 60) {
+//             grade = "B";
+//         } else if (percentage >= 50) {
+//             grade = "C";
+//         } else if (percentage >= 40) {
+//             grade = "D";
+//         } else {
+//             grade = "Fail";
+//         }
+
+//         // Return result
+//         resolve({
+//             name: name,
+//             marks: marks,
+//             totalMarks: totalMarks,
+//             percentage: percentage.toFixed(2),
+//             grade: grade
+//         });
+//     });
+// }
+
+// // Call the function
+// calculateResult("Ali", 420, 500)
+//     .then((result) => {
+//         console.log("Student Name:", result.name);
+//         console.log("Obtained Marks:", result.marks);
+//         console.log("Total Marks:", result.totalMarks);
+//         console.log("Percentage:", result.percentage + "%");
+//         console.log("Grade:", result.grade);
+//     })
+//     .catch((error) => {
+//         console.log("Error:", error);
+//     });
+
+// function calculateResult(name, marks, totalMarks) {
+//     return new Promise((resolve, reject) => {
+//         if( marks =  0 || marks > totalMarks ) {
+//          reject("Invalid marks!");
+//         return;
+//     }
+//     let percentage = (marks / totalMarks) * 100;
+
+//         let grade;
+
+//         if (percentage >= 80) {
+//             grade = "A+";
+//         } else if (percentage >= 70) {
+//             grade = "A";
+//         } else if (percentage >= 60) {
+//             grade = "B";
+//         } else if (percentage >= 50) {
+//             grade = "C";
+//         } else if (percentage >= 40) {
+//             grade = "D";
+//         } else {
+//             grade = "Fail";
+//         }
+
+//         resolve({
+//             name: name,
+//             marks: marks,
+//             totalMarks: totalMarks,
+//             percentage: percentage.toFixed(2),
+//             grade: grade
+//         });
+//     });
+// }
+// calculateResult("Ali", 420, 500)
+//     .then((result) => {
+//         console.log("Student Name:", result.name);
+//         console.log("Obtained Marks:", result.marks);
+//         console.log("Total Marks:", result.totalMarks);
+//         console.log("Percentage:", result.percentage + "%");
+//         console.log("Grade:", result.grade);
+//     })
+//     .catch((error) => {
+//         console.log("Error:", error);
+//     });
+
+// let arryfunction = arr => {
+//     return new Promise((resolve, reject) => {
+//         if (arr.length > 0) {
+//             resolve(arr);
+//         } else {
+//             reject("Array is empty");
+//         }
+//     });
+// }
+// let myArray = [1, 2, 3, 4, 5];
+// arryfunction(myArray).then(res => console.log("Array is not empty:", res))
+//     .catch(error => console.error(error));
+
+// // shoping card function with promise
+
+// let shoppingCart = items => {
+//     return new Promise((resolve, reject) => {
+//         if (items.length > 0) {
+//             resolve("Items added to cart: " + item.join(" "));
+//         }
+//         else {
+//             reject("Cart is empty");
+//         }
+//     });
+// }
+// let item = ["Shirt", "Pants", "Shoes"];
+// shoppingCart(item)
+//     .then(res => console.log(res))
+//     .catch(error => console.error(error));
+
+
+let shoppingCart = items => {
     return new Promise((resolve, reject) => {
 
-        // Validate marks
-        if (marks < 0 || marks > totalMarks) {
-            reject("Invalid marks!");
-            return;
+        if (items.length > 0) {
+
+            let totalBill = 0;
+
+            items.forEach(item => {
+                let total = item.price * item.quantity;
+                totalBill += total;
+
+                console.log(
+                    item.name,
+                    "Price:", item.price,
+                    "Quantity:", item.quantity,
+                    "Total:", total
+                );
+            });
+
+            resolve("Grand Total: Rs. " + totalBill);
+
         }
-
-        // Calculate percentage
-        let percentage = (marks / totalMarks) * 100;
-
-        // Calculate grade
-        let grade;
-
-        if (percentage >= 80) {
-            grade = "A+";
-        } else if (percentage >= 70) {
-            grade = "A";
-        } else if (percentage >= 60) {
-            grade = "B";
-        } else if (percentage >= 50) {
-            grade = "C";
-        } else if (percentage >= 40) {
-            grade = "D";
-        } else {
-            grade = "Fail";
+        else {
+            reject("Cart is empty");
         }
-
-        // Return result
-        resolve({
-            name: name,
-            marks: marks,
-            totalMarks: totalMarks,
-            percentage: percentage.toFixed(2),
-            grade: grade
-        });
     });
 }
 
-// Call the function
-calculateResult("Ali", 420, 500)
-    .then((result) => {
-        console.log("Student Name:", result.name);
-        console.log("Obtained Marks:", result.marks);
-        console.log("Total Marks:", result.totalMarks);
-        console.log("Percentage:", result.percentage + "%");
-        console.log("Grade:", result.grade);
-    })
-    .catch((error) => {
-        console.log("Error:", error);
-    });
+let item = [
+    { name: "Shirt", price: 1500, quantity: 2 },
+    { name: "Pants", price: 2000, quantity: 1 },
+    { name: "Shoes", price: 3000, quantity: 1 }
+];
+
+shoppingCart(item)
+    .then(res => console.log(res))
+    .catch(error => console.error(error));
