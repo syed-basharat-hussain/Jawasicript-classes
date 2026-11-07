@@ -886,7 +886,7 @@ let shoppingCart = items => {
 }
 
 let item = [
-    { name: "Shirt", price: 1500, quantity: 2 },
+    { name: "Shirt", price: 1700, quantity: 2 },
     { name: "Pants", price: 2000, quantity: 1 },
     { name: "Shoes", price: 3000, quantity: 1 }
 ];
