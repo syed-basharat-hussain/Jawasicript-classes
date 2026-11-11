@@ -960,28 +960,74 @@
 //     .then(data => console.log(data))
 //     .catch(error => console.error('Error:', error));
 
-// use api finction with filter rating base
+// // use api finction with filter rating base
 
-let fetchData = url => {
-    return new Promise((resolve, reject) => {
-        // to check the rating of products is greater than 4.5 and return those products
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                let filteredProducts = data.products.filter(product => product.rating > 4.5);
-                resolve(filteredProducts);
-            })
-            .catch(error => reject(error));
-})};
-fetchData('https://dummyjson.com/products')
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error));
+// let fetchData = url => {
+//     return new Promise((resolve, reject) => {
+//         // to check the rating of products is greater than 4.5 and return those products
+//         fetch(url)
+//             .then(response => response.json())
+//             .then(data => {
+//                 let filteredProducts = data.products.filter(product => product.rating > 4.5);
+//                 resolve(filteredProducts);
+//             })
+//             .catch(error => reject(error));
+// })};
+// fetchData('https://dummyjson.com/products')
+//     .then(data => console.log(data))
+//     .catch(error => console.error('Error:', error));
 
 
-// promise with api function base
+// // promise with api function base
 
 // let card=url=>{
 //     return new Promise((reject, resole)=>{
         
 //     })
 // }
+
+
+// let card = url => {
+//     return new Promise((resolve, reject) => {
+
+//         fetch(url)
+//             .then(response => response.json())
+//             .then(data => {
+
+//                 let filteredProducts = data.products.filter(product =>
+//                     product.rating > 4.5 && product.price < 500
+//                 );
+
+//                 resolve(filteredProducts);
+
+//             })
+//             .catch(error => reject(error));
+//     });
+// };
+
+// card('https://dummyjson.com/products')
+//     .then(res => console.log("Best Products:", res))
+//     .catch(error => console.error("Error:", error));
+
+
+let card = url => {
+    return new Promise((resolve, reject) => {
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+
+                let filteredProducts = data.products.filter(product =>
+                    product.rating > 4.5 && product.price < 500
+                );
+
+                resolve(filteredProducts);
+
+            })
+            .catch(error => reject(error));
+    });
+};
+
+card('https://dummyjson.com/products')
+    .then(res => console.log("Best Products:", res))
+    .catch(error => console.error("Error:", error));
