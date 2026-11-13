@@ -1010,24 +1010,79 @@
 //     .catch(error => console.error("Error:", error));
 
 
-let card = url => {
-    return new Promise((resolve, reject) => {
+// let card = url => {
+//     return new Promise((resolve, reject) => {
 
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
+//         fetch(url)
+//             .then(response => response.json())
+//             .then(data => {
 
-                let filteredProducts = data.products.filter(product =>
-                    product.rating > 4.5 && product.price < 500
-                );
+//                 let filteredProducts = data.products.filter(product =>
+//                     product.rating > 4.5 && product.price < 500
+//                 );
 
-                resolve(filteredProducts);
+//                 resolve(filteredProducts);
 
-            })
-            .catch(error => reject(error));
-    });
-};
+//             })
+//             .catch(error => reject(error));
+//     });
+// };
 
-card('https://dummyjson.com/products')
-    .then(res => console.log("Best Products:", res))
-    .catch(error => console.error("Error:", error));
+// card('https://dummyjson.com/products')
+//     .then(res => console.log("Best Products:", res))
+//     .catch(error => console.error("Error:", error));
+
+// async function getUserData() {
+//   // 1. Wait for the fetch request to resolve and assign the Response object
+//   const response = await fetch('https://typicode.com');
+  
+  // 2. Wait for the JSON parsing Promise to resolve and assign the data
+//   const user = await response.json();
+  
+//   console.log(user.name); // "Leanne Graham"
+// }
+
+// getUserData();
+
+// async function getUserData(){
+//     let response =await fetch('https://dummyjson.com/products')
+//     let product =await response.json();
+//     console.log(product);
+    
+// }
+// getUserData()
+
+// async function getUserData(){
+//   try{
+//       let response =await fetch('https://dummyjsn.com/products')
+//     let product =await response.json();
+//     console.log(product);
+//   }
+//   catch{
+//     console.log("api not working");
+    
+//   }
+    
+// }
+// getUserData()
+
+// async function getUserData() {
+//   let response = await fetch('https://dumyjsn.com/products')
+//   let product=(await response).json();
+//   console.log(product);
+  
+// }
+getUserData()
+async function getUserData() {
+  try{
+    let response = await fetch('https://dummyjsn.com/products')
+    let product =await response.json();
+     console.log(product);
+  }
+  catch{
+    console.log("api not working");
+  }
+}
+getUserData()
+getUserData()
+getUserData()
